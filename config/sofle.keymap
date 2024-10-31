@@ -63,9 +63,9 @@
             display-name = "qwerty colemak";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &trans
-&trans  &kp A   &kp Z   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
-&trans  &kp Q   &kp R   &kp S   &kp T   &kp G                     &kp M   &kp N   &kp E   &kp I   &kp O     &trans
-&trans  &kp W   &kp X   &kp C   &kp D   &kp V   &trans    &trans  &kp K   &kp H   &trans  &trans  &trans    &trans
+&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
+&trans  &kp A   &kp R   &kp S   &kp T   &kp G                     &kp M   &kp N   &kp E   &kp I   &kp O     &trans
+&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans  &kp K   &kp H   &trans  &trans  &trans    &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0
             >;
 
