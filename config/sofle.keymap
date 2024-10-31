@@ -19,10 +19,9 @@
     combos {
         compatible = "zmk,combos";
 
-        default_azerty {
-            bindings = <&to 1>;
-            key-positions = <50 59>;
-            layers = <0>;
+        setup_L3 {
+            bindings = <&tog 4>;
+            key-positions = <42 43>;
         };
     };
 
