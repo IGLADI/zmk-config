@@ -45,7 +45,7 @@
         };
 
         azerty_colemak {
-            display-name = "azerty colemak";
+            display-name = "Acolemak";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &trans
 &trans  &kp A   &kp Z   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
@@ -60,7 +60,7 @@
         };
 
         qwerty_colemak {
-            display-name = "qwerty colemak";
+            display-name = "Qcolemak";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &trans
 &trans  &kp A   &kp Z   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
@@ -106,7 +106,7 @@
 
         gaming_azerty {
             label = "gaming_azerty";
-            display-name = "gaming_azerty";
+            display-name = "Agaming";
             bindings = <
 &trans  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
@@ -122,13 +122,13 @@
 
         gaming_qwerty {
             label = "gaming_qwerty";
-            display-name = "gaming_qwerty";
+            display-name = "Qgaming";
             bindings = <
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp A         &kp Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Q         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &to 2         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 5
+                &to 1         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 5
             >;
 
             sensor-bindings =
