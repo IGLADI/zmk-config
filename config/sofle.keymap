@@ -45,7 +45,7 @@
         };
 
         azerty_colemak {
-            display-name = "azerty colemak";
+            display-name = "A colemak";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &trans
 &trans  &kp A   &kp Z   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
@@ -60,7 +60,7 @@
         };
 
         qwerty_colemak {
-            display-name = "qwerty colemak";
+            display-name = "Q colemak";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans    &trans
 &trans  &kp Q   &kp W   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
@@ -105,7 +105,7 @@
         };
 
         gaming_azerty {
-            label = "gaming_azerty";
+            label = "A gaming";
             display-name = "gaming_azerty";
             bindings = <
 &trans  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -121,7 +121,7 @@
         };
 
         gaming_qwerty {
-            label = "gaming_qwerty";
+            label = "Q gaming";
             display-name = "gaming_qwerty";
             bindings = <
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
