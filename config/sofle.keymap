@@ -15,13 +15,20 @@
 
 / {
     // add 2ns nkp (non-overlap key press)
+
     behaviors {
+        nkp: non_overlap_key_press {
+            compatible = "zmk,behavior-non-overlap";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+        };
         nkp2: non_overlap_key_press_2 {
             compatible = "zmk,behavior-non-overlap";
             #binding-cells = <1>;
             bindings = <&kp>;
         };
     };
+
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
@@ -39,10 +46,10 @@
         default {
             display-name = "default";
             bindings = <
-&kp APOS       &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                               &kp N6     &kp N7  &kp N8     &kp N9   &kp N0         &kp BSLH
+&kp MINUS      &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                               &kp N6     &kp N7  &kp N8     &kp N9   &kp N0         &kp BSLH
 &kp TAB        &kp Q   &kp W   &kp E     &kp R      &kp T                                &kp Y      &kp U   &kp I      &kp O    &kp P          &kp ESCAPE
 &kp BACKSPACE  &kp A   &kp S   &kp D     &kp F      &kp G                                &kp H      &kp J   &kp K      &kp L    &kp SEMICOLON  &kp DELETE
-&kp MINUS      &kp Z   &kp X   &kp C     &kp V      &kp B      &kp C_MUTE    &kp C_PLAY  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp EQUAL
+&kp APOS       &kp Z   &kp X   &kp C     &kp V      &kp B      &kp C_MUTE    &kp C_PLAY  &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp EQUAL
                        &tog 5  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI      &kp LSHFT   &kp ENTER  &mo 3   &kp RALT   &to 1
             >;
 
@@ -115,8 +122,8 @@
             display-name = "Agame";
             bindings = <
 &trans  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TAB         &kp Q         &nkp2 W         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &nkp A         &nkp2 S         &nkp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB         &kp Q         &nkp2 W       &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &nkp A        &nkp2 S       &nkp D        &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LCTRL       &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 6
             >;
@@ -130,8 +137,8 @@
             display-name = "Qgame";
             bindings = <
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp A         &nkp2 Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &nkp Q         &nkp2 S         &nkp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp A         &nkp2 Z       &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &nkp Q        &nkp2 S       &nkp D        &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &to 1         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 5
             >;
