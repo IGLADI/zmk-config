@@ -17,11 +17,6 @@
     // add 2ns nkp (non-overlap key press)
 
     behaviors {
-        nkp: non_overlap_key_press {
-            compatible = "zmk,behavior-non-overlap";
-            #binding-cells = <1>;
-            bindings = <&kp>;
-        };
         nkp2: non_overlap_key_press_2 {
             compatible = "zmk,behavior-non-overlap";
             #binding-cells = <1>;
