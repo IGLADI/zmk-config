@@ -41,11 +41,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&kp MINUS      &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                            &kp N6         &kp N7  &kp N8     &kp N9     &kp N0     &kp BSLH
-&kp TAB        &kp A   &kp Z   &kp F     &kp P      &kp B                             &kp J          &kp L   &kp U      &kp Y      &kp M      &kp ESCAPE
-&kp BACKSPACE  &kp Q   &kp R   &kp S     &kp T      &kp G                             &kp SEMICOLON  &kp N   &kp E      &kp I      &kp O      &kp DELETE
-&kp APOS       &kp W   &kp X   &kp C     &kp D      &kp V      &trans      &trans     &kp K          &kp H   &kp COMMA  &kp COMMA  &kp SLASH  &kp EQUAL
-                       &tog 5  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI    &kp LSHFT  &kp ENTER      &mo 3   &kp RALT   &to 1
+&kp MINUS      &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                              &kp N6         &kp N7  &kp N8     &kp N9     &kp N0     &kp BSLH
+&kp TAB        &kp A   &kp Z   &kp F     &kp P      &kp B                               &kp J          &kp L   &kp U      &kp Y      &kp M      &kp ESCAPE
+&kp BACKSPACE  &kp Q   &kp R   &kp S     &kp T      &kp G                               &kp SEMICOLON  &kp N   &kp E      &kp I      &kp O      &kp DELETE
+&kp APOS       &kp W   &kp X   &kp C     &kp D      &kp V      &kp C_MUTE    &tog 4     &kp K          &kp H   &kp COMMA  &kp COMMA  &kp SLASH  &kp EQUAL
+                       &tog 5  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI      &kp LSHFT  &kp ENTER      &mo 3   &kp RALT   &to 1
             >;
 
             sensor-bindings =
