@@ -41,11 +41,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&kp MINUS      &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                              &kp N6         &kp N7  &kp N8     &kp N9     &kp N0     &kp BSLH
-&kp ESCAPE     &kp A   &kp Z   &kp F     &kp P      &kp B                               &kp J          &kp L   &kp U      &kp Y      &kp M      &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S     &kp T      &kp G                               &kp SEMICOLON  &kp N   &kp E      &kp I      &kp O      &kp DELETE
-&kp APOS       &kp W   &kp X   &kp C     &kp D      &kp V      &kp C_MUTE    &tog 4     &kp K          &kp H   &kp COMMA  &kp COMMA  &kp SLASH  &kp EQUAL
-                       &tog 5  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI      &kp LSHFT  &kp ENTER      &mo 3   &kp RALT   &to 1
+&kp ASTERISK   &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                   &kp N6          &kp N7  &kp N8     &kp N9   &kp N0     &kp EQUAL
+&kp ESCAPE     &kp A   &kp Z   &kp F     &kp P      &kp B                                    &kp J           &kp L   &kp U      &kp Y    &kp M      &kp TAB
+&kp BACKSPACE  &kp Q   &kp R   &kp S     &kp T      &kp G                                    &kp SEMICOLON   &kp N   &kp E      &kp I    &kp O      &kp DELETE
+&kp MINUS      &kp W   &kp X   &kp C     &kp D      &kp V           &kp C_MUTE    &tog 4     &kp K           &kp H   &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
+                       &tog 5  &kp LALT  &kp LCTRL  &mt LALT SPACE  &kp LGUI      &kp ENTER  &kp LEFT_SHIFT  &mo 3   &kp RALT   &to 1
             >;
 
             sensor-bindings =
@@ -87,9 +87,9 @@
             display-name = "layer 2";
             bindings = <
 &trans  &kp F1           &kp F2          &kp F3          &kp F4           &kp F5                        &kp F6         &kp F7             &kp F8                &kp F9                 &kp F10       &kp F11
-&trans  &kp SQT          &kp HOME        &kp UP_ARROW    &kp END          &kp PERIOD                    &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp F12
+&trans  &kp SQT          &kp HOME        &kp UP_ARROW    &kp END          &kp PERIOD                    &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT   &kp F12
 &trans  &kp EXCLAMATION  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HASH                      &kp PIPE       &kp COLON          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans  &kp CARET        &kp SLASH       &kp ASTERISK    &kp BACKSLASH    &trans      &trans    &trans  &kp TILDE      &kp DOLLAR         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN   &trans
+&trans  &kp CARET        &kp SLASH       &kp ASTERISK    &kp BACKSLASH    &trans      &trans    &trans  &kp TILDE      &kp DOLLAR         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN   &trans
                          &trans          &trans          &trans           &trans      &trans    &trans  &trans         &trans             &trans                &trans
             >;
 
