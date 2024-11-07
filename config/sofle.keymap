@@ -41,11 +41,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&kp ASTERISK   &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                                   &kp N6          &kp N7  &kp N8     &kp N9   &kp N0     &kp EQUAL
-&kp ESCAPE     &kp A   &kp Z   &kp F     &kp P      &kp B                                    &kp J           &kp L   &kp U      &kp Y    &kp M      &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S     &kp T      &kp G                                    &kp SEMICOLON   &kp N   &kp E      &kp I    &kp O      &kp DELETE
-&kp MINUS      &kp W   &kp X   &kp C     &kp D      &kp V           &kp C_MUTE    &tog 4     &kp K           &kp H   &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
-                       &tog 5  &kp LALT  &kp LCTRL  &mt LALT SPACE  &kp LGUI      &kp ENTER  &kp LEFT_SHIFT  &mo 3   &kp RALT   &to 1
+&kp ASTERISK   &kp N1  &kp N2  &kp N3          &kp N4     &kp N5                                         &kp N6          &kp N7  &kp N8      &kp N9   &kp N0     &kp EQUAL
+&kp ESCAPE     &kp A   &kp Z   &kp F           &kp P      &kp B                                          &kp J           &kp L   &kp U       &kp Y    &kp M      &kp TAB
+&kp BACKSPACE  &kp Q   &kp R   &kp S           &kp T      &kp G                                          &kp SEMICOLON   &kp N   &kp E       &kp I    &kp O      &kp DELETE
+&kp MINUS      &kp W   &kp X   &kp C           &kp D      &kp V           &kp C_MUTE    &tog 4           &kp K           &kp H   &kp COMMA   &kp DOT  &kp SLASH  &kp SQT
+                       &tog 5  &kp LEFT_SHIFT  &kp LCTRL  &mt LALT SPACE  &kp LGUI      &mt LCTRL ENTER  &kp LEFT_SHIFT  &mo 3   &kp C_MENU  &to 1
             >;
 
             sensor-bindings =
