@@ -61,8 +61,8 @@
     combos {
         compatible = "zmk,combos";
 
-        symbol_full_right_hand {
-            bindings = <&mo 3>;
+        nav_full_right_hand {
+            bindings = <&mo 4>;
             key-positions = <31 32>;
         };
     };
@@ -73,11 +73,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&kp N0         &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                                          &kp N6          &kp N7           &kp N8   &kp N9  &kp N0        &kp N9
+&trans         &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                                          &kp N6          &kp N7           &kp N8   &kp N9  &kp N0        &trans
 &kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                           &kp J           &kp L            &kp U    &kp Y   &dubbelpoint  &kp TAB
 &kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                           &kp SEMICOLON   &kp N            &kp E    &kp I   &kp O         &kp DELETE
-&kp NUMBER_2   &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 4           &kp K           &kp H            &commaq  &dotex  &aposquote    &kp NUMBER_7
-                       &tog 5  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &mt LCTRL ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &tog 3   &to 1
+&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 5           &kp K           &kp H            &commaq  &dotex  &aposquote    &trans
+                       &tog 6  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &mt LCTRL ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &tog 3   &to 1
             >;
 
             sensor-bindings =
@@ -92,7 +92,7 @@
 &trans  &kp Q   &kp W   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &trans  &trans
 &trans  &kp A   &kp R   &kp S   &kp T   &kp G                     &kp M   &kp N   &kp E   &kp I   &kp O   &trans
 &trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans  &kp K   &kp H   &trans  &trans  &trans  &trans
-                &tog 6  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 2
+                &tog 7  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 2
             >;
 
             sensor-bindings =
@@ -118,16 +118,26 @@
         layer_2 {
             display-name = "layer 2";
             bindings = <
-&trans  &kp F1           &kp F2            &kp F3          &kp F4           &kp F5                        &kp F6         &kp F7          &kp F8                &kp F9                 &kp F10        &kp F11
-&trans  &kp PLUS         &kp HOME          &kp UP_ARROW    &kp END          &kp DOLLAR                    &kp PIPE       &kp CARET       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN    &kp F12
-&trans  &kp EXCLAMATION  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp EQUAL                     &kp AMPERSAND  &kp MINUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT    &trans
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp SLASH       &kp ASTERISK     &kp HASH    &trans    &trans  &kp TILDE      &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &trans
-                         &trans            &trans          &trans           &trans      &trans    &trans  &trans         &trans          &trans                &trans
+&trans  &kp F1           &kp F2            &kp F3          &kp F4                &kp F5                        &kp F6         &kp F7     &kp F8                &kp F9                 &kp F10      &kp F11
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp UNDERSCORE  &kp SLASH             &kp DOLLAR                    &kp PIPE       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &kp F12
+&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS       &kp EQUAL             &kp HASH                      &kp AMPERSAND  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &trans
+&trans  &kp E            &kp E             &kp ASTERISK    &kp NON_US_BACKSLASH  &kp C       &trans    &trans  &kp TILDE      &kp A      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
+                         &trans            &trans          &trans                &trans      &trans    &trans  &trans         &trans     &trans                &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_DN PG_UP>;
+        };
+
+        Navigation {
+            bindings = <
+&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         layer_3 {
@@ -152,7 +162,7 @@
 &trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LCTRL       &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 6
+                        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 7
             >;
 
             sensor-bindings =
@@ -167,7 +177,7 @@
 &trans  &trans  &kp A         &kp Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Q         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &to 1         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 5
+                &to 1         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 6
             >;
 
             sensor-bindings =
