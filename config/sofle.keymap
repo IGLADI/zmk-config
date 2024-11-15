@@ -61,9 +61,9 @@
     combos {
         compatible = "zmk,combos";
 
-        nav_full_right_hand {
-            bindings = <&mo 4>;
-            key-positions = <31 32>;
+        numbers_fn {
+            bindings = <&mo 5>;
+            key-positions = <53 56>;
         };
     };
 
@@ -73,11 +73,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&trans         &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                                          &kp N6          &kp N7           &kp N8   &kp N9  &kp N0        &trans
-&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                           &kp J           &kp L            &kp U    &kp Y   &dubbelpoint  &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                           &kp SEMICOLON   &kp N            &kp E    &kp I   &kp O         &kp DELETE
-&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 5           &kp K           &kp H            &commaq  &dotex  &aposquote    &trans
-                       &tog 6  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &mt LCTRL ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &tog 3   &to 1
+&trans      &trans  &trans      &trans       &trans            &trans                               &trans         &trans            &trans       &trans      &trans        &trans
+&trans      &kp A   &kp Z       &kp F        &kp P             &kp B                                &kp J          &kp L             &kp U        &kp Y       &dubbelpoint  &trans
+&kp ESCAPE  &kp Q   &mt LALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G                                &kp SEMICOLON  &mt LEFT_SHIFT N  &mt LCTRL E  &mt LALT I  &kp O         &kp TAB
+&trans      &kp W   &kp X       &kp C        &kp D             &kp V        &kp C_MUTE    &tog 6    &kp K          &kp H             &commaq      &dotex      &aposquote    &trans
+                    &tog 7      &trans       &kp BACKSPACE     &lt 3 SPACE  &kp LGUI      &kp LGUI  &lt 4 ENTER    &kp DEL           &trans       &to 1
             >;
 
             sensor-bindings =
@@ -88,11 +88,11 @@
         qwerty_colemak {
             display-name = "Q=>col";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                     &kp J   &kp L   &kp U   &kp Y   &trans  &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G                     &kp M   &kp N   &kp E   &kp I   &kp O   &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans  &kp K   &kp H   &trans  &trans  &trans  &trans
-                &tog 7  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 2
+&trans  &trans  &trans      &trans       &trans            &trans                    &trans  &trans            &trans       &trans      &trans  &trans
+&trans  &kp Q   &kp W       &kp F        &kp P             &kp B                     &kp J   &kp L             &kp U        &kp Y       &trans  &trans
+&trans  &kp A   &mt LALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G                     &kp M   &mt LEFT_SHIFT N  &mt LCTRL E  &mt LALT I  &kp O   &trans
+&trans  &kp Z   &kp X       &kp C        &kp D             &kp V   &trans    &trans  &kp K   &kp H             &trans       &trans      &trans  &trans
+                &tog 8      &trans       &trans            &trans  &trans    &trans  &trans  &trans            &trans       &to 2
             >;
 
             sensor-bindings =
@@ -103,11 +103,11 @@
         default {
             display-name = "default";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q   &kp W   &kp E   &kp R   &kp T                     &kp Y   &kp U   &kp I   &kp O   &kp P   &trans
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G                     &kp H   &kp J   &kp K   &kp L   &trans  &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans    &trans  &kp N   &kp M   &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &to 0
+&trans  &trans  &trans      &trans       &trans            &trans                    &trans  &trans            &trans       &trans      &trans  &trans
+&trans  &kp Q   &kp W       &kp E        &kp R             &kp T                     &kp Y   &kp U             &kp I        &kp O       &kp P   &trans
+&trans  &kp A   &mt LALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                     &kp H   &mt LEFT_SHIFT J  &mt LCTRL K  &mt LALT L  &trans  &trans
+&trans  &kp Z   &kp X       &kp C        &kp V             &kp B   &trans    &trans  &kp N   &kp M             &trans       &trans      &trans  &trans
+                &trans      &trans       &trans            &trans  &trans    &trans  &trans  &trans            &trans       &to 0
             >;
 
             sensor-bindings =
@@ -115,14 +115,14 @@
                 <&inc_dec_kp PG_DN PG_UP>;
         };
 
-        layer_2 {
-            display-name = "layer 2";
+        symbols {
+            display-name = "symbols";
             bindings = <
-&trans  &kp F1           &kp F2            &kp F3          &kp F4                &kp F5                        &kp F6         &kp F7     &kp F8                &kp F9                 &kp F10      &kp F11
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp UNDERSCORE  &kp SLASH             &kp DOLLAR                    &kp PIPE       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &kp F12
-&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS       &kp EQUAL             &kp HASH                      &kp AMPERSAND  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &trans
-&trans  &kp E            &kp E             &kp ASTERISK    &kp NON_US_BACKSLASH  &kp C       &trans    &trans  &kp TILDE      &kp A      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
-                         &trans            &trans          &trans                &trans      &trans    &trans  &trans         &trans     &trans                &trans
+&trans  &trans           &trans            &trans           &trans                &trans                        &trans         &trans                &trans                      &trans                      &trans       &trans
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp UNDERSCORE   &kp SLASH             &kp DOLLAR                    &kp PIPE       &kp CARET             &kp LEFT_BRACE              &kp RIGHT_BRACE             &kp AT_SIGN  &trans
+&trans  &kp EXCLAMATION  &mt LALT PLUS     &mt LCTRL MINUS  &mt LEFT_SHIFT EQUAL  &kp HASH                      &kp AMPERSAND  &mt LEFT_SHIFT COLON  &mt LCTRL LEFT_PARENTHESIS  &mt LALT RIGHT_PARENTHESIS  &kp PERCENT  &trans
+&trans  &kp E            &kp E             &kp ASTERISK     &kp NON_US_BACKSLASH  &kp C       &trans    &trans  &kp TILDE      &kp A                 &kp LEFT_BRACKET            &kp RIGHT_BRACKET           &trans       &trans
+                         &trans            &trans           &trans                &trans      &trans    &trans  &trans         &trans                &trans                      &trans
             >;
 
             sensor-bindings =
@@ -130,18 +130,29 @@
                 <&inc_dec_kp PG_DN PG_UP>;
         };
 
-        Navigation {
+        navigation {
+            display-name = "nav";
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans          &trans     &trans    &trans  &trans
+&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans                    &trans  &trans          &trans     &trans    &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans     &trans    &trans  &trans
+                &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans     &trans
             >;
         };
 
-        layer_3 {
-            display-name = "layer 3";
+        number_fn {
+            bindings = <
+&trans   &trans       &trans       &trans        &trans             &trans                    &trans  &trans             &trans        &trans       &trans       &trans
+&kp F12  &kp F1       &kp F2       &kp F3        &kp F4             &kp F5                    &kp F6  &kp F7             &kp F8        &kp F9       &kp F10      &kp F11
+&trans   &mt LGUI N1  &mt LALT N2  &mt LCTRL N3  &mt LEFT_SHIFT N4  &kp N5                    &kp N6  &mt LEFT_SHIFT N7  &mt LCTRL N8  &mt LALT N9  &mt LGUI N0  &trans
+&trans   &trans       &trans       &trans        &trans             &trans  &trans    &trans  &trans  &trans             &trans        &trans       &trans       &trans
+                      &trans       &trans        &trans             &trans  &trans    &trans  &trans  &trans             &trans        &trans
+            >;
+        };
+
+        util {
+            display-name = "util";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
@@ -162,7 +173,7 @@
 &trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LCTRL       &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 7
+                        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 8
             >;
 
             sensor-bindings =
@@ -177,7 +188,7 @@
 &trans  &trans  &kp A         &kp Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Q         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &to 1         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 6
+                &to 1         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 7
             >;
 
             sensor-bindings =
