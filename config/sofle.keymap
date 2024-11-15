@@ -58,26 +58,17 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
-    combos {
-        compatible = "zmk,combos";
-
-        numbers_fn {
-            bindings = <&mo 5>;
-            key-positions = <53 56>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&trans      &trans  &trans      &trans       &trans            &trans                               &trans         &trans            &trans       &trans      &trans        &trans
-&trans      &kp A   &kp Z       &kp F        &kp P             &kp B                                &kp J          &kp L             &kp U        &kp Y       &dubbelpoint  &trans
-&kp ESCAPE  &kp Q   &mt LALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G                                &kp SEMICOLON  &mt LEFT_SHIFT N  &mt LCTRL E  &mt LALT I  &kp O         &kp TAB
-&trans      &kp W   &kp X       &kp C        &kp D             &kp V        &kp C_MUTE    &tog 6    &kp K          &kp H             &commaq      &dotex      &aposquote    &trans
-                    &tog 7      &trans       &kp BACKSPACE     &lt 3 SPACE  &kp LGUI      &kp LGUI  &lt 4 ENTER    &kp DEL           &trans       &to 1
+&trans      &trans  &trans      &trans       &trans            &trans                                  &trans         &trans            &trans       &trans      &trans        &trans
+&trans      &kp A   &kp Z       &kp F        &kp P             &kp B                                   &kp J          &kp L             &kp U        &kp Y       &dubbelpoint  &trans
+&kp ESCAPE  &kp Q   &mt LALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G                                   &kp SEMICOLON  &mt LEFT_SHIFT N  &mt LCTRL E  &mt LALT I  &kp O         &kp TAB
+&trans      &kp W   &kp X       &kp C        &kp D             &kp V        &kp C_MUTE    &tog 6       &kp K          &kp H             &commaq      &dotex      &aposquote    &trans
+                    &tog 7      &trans       &kp BACKSPACE     &lt 5 SPACE  &kp LGUI      &lt 3 ENTER  &lt 4 ENTER    &kp DEL           &trans       &to 1
             >;
 
             sensor-bindings =
@@ -133,10 +124,10 @@
         navigation {
             display-name = "nav";
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans          &trans     &trans    &trans  &trans
-&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans                    &trans  &trans          &trans     &trans    &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans     &trans    &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans                    &trans  &trans          &trans     &trans    &trans    &trans
+&trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans                    &trans  &trans          &trans     &trans    &trans    &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans     &trans    &trans    &trans
                 &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans     &trans
             >;
         };
@@ -173,7 +164,7 @@
 &trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LCTRL       &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 8
+                        &trans        &to 8         &trans        &kp LCTRL     &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -188,7 +179,7 @@
 &trans  &trans  &kp A         &kp Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Q         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &to 1         &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 7
+                &to 1         &to 7         &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 7
             >;
 
             sensor-bindings =
