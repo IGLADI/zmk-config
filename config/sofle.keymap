@@ -58,7 +58,14 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        symbol_full_right_hand {
+            bindings = <&mo 3>;
+            key-positions = <31 32>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
