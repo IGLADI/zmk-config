@@ -65,6 +65,11 @@
             bindings = <&mo 4>;
             key-positions = <31 32>;
         };
+
+        num {
+            bindings = <&mo 5>;
+            key-positions = <33 34>;
+        };
     };
 
     keymap {
@@ -76,8 +81,8 @@
 &trans         &trans  &trans  &trans  &trans    &trans                                          &trans          &trans           &trans   &trans  &trans        &trans
 &kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                           &kp J           &kp L            &kp U    &kp Y   &dubbelpoint  &kp TAB
 &kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                           &kp SEMICOLON   &kp N            &kp E    &kp I   &kp O         &kp DELETE
-&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 5           &kp K           &kp H            &commaq  &dotex  &aposquote    &trans
-                       &tog 6  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &mt LCTRL ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans   &to 1
+&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 6           &kp K           &kp H            &commaq  &dotex  &aposquote    &trans
+                       &tog 7  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &mt LCTRL ENTER  &kp LEFT_SHIFT  &lt 5 LS(ENTER)  &mo 3    &to 1
             >;
 
             sensor-bindings =
