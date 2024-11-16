@@ -63,12 +63,7 @@
 
         nav {
             bindings = <&mo 4>;
-            key-positions = <31 32>;
-        };
-
-        num {
-            bindings = <&mo 5>;
-            key-positions = <33 34>;
+            key-positions = <53 56>;
         };
     };
 
@@ -78,11 +73,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&trans         &trans  &trans  &trans  &trans    &trans                                          &trans          &trans           &trans   &trans  &trans        &trans
-&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                           &kp J           &kp L            &kp U    &kp Y   &dubbelpoint  &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                           &kp SEMICOLON   &kp N            &kp E    &kp I   &kp O         &kp DELETE
-&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 6           &kp K           &kp H            &commaq  &dotex  &aposquote    &trans
-                       &tog 7  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &mt LCTRL ENTER  &kp LEFT_SHIFT  &lt 5 LS(ENTER)  &mo 3    &to 1
+&trans         &trans  &trans  &trans  &trans    &trans                                      &trans          &trans           &trans   &trans  &trans        &trans
+&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                       &kp J           &kp L            &kp U    &kp Y   &dubbelpoint  &kp TAB
+&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                       &kp SEMICOLON   &kp N            &kp E    &kp I   &kp O         &kp DELETE
+&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 6       &kp K           &kp H            &commaq  &dotex  &aposquote    &trans
+                       &tog 7  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt 5 ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans   &to 1
             >;
 
             sensor-bindings =
@@ -149,11 +144,11 @@
         number_fn {
             display-name = "numbers";
             bindings = <
-&trans   &trans        &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans   &trans
-&kp F12  &kp F1        &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7    &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &trans        &trans  &trans  &trans  &trans                    &trans  &trans   &trans  &trans  &trans   &trans
+&kp F12  &kp F1        &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7   &kp F8  &kp F9  &kp F10  &kp F11
 &trans   &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans
-&trans   &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans   &trans
-                       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans
+&trans   &trans        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans  &trans  &trans   &trans
+                       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans  &trans
             >;
         };
 
