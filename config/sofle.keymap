@@ -13,6 +13,10 @@
 #define RAISE 2
 #define GAMING 3
 
+&mt {
+    tapping-term-ms = <500>;
+};
+
 / {
     // add 2ns nkp (non-overlap key press)
 
@@ -62,6 +66,7 @@
         compatible = "zmk,combos";
 
         nav {
+            timeout-ms = <150>;
             bindings = <&mo 5>;
             key-positions = <53 56>;
         };
