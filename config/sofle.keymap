@@ -13,9 +13,7 @@
 #define RAISE 2
 #define GAMING 3
 
-&mt {
-    tapping-term-ms = <500>;
-};
+&mt { tapping-term-ms = <500>; };
 
 / {
     // add 2ns nkp (non-overlap key press)
@@ -42,22 +40,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        aposquote: apos_quote {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp APOS>, <&kp DOUBLE_QUOTES>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dubbelpoint: dubbelpoint {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp SEMICOLON>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -66,7 +48,7 @@
         compatible = "zmk,combos";
 
         nav {
-            timeout-ms = <150>;
+            timeout-ms = <100>;
             bindings = <&mo 5>;
             key-positions = <53 56>;
         };
@@ -78,11 +60,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&trans         &trans  &trans  &trans  &trans    &trans                                      &trans          &trans           &trans   &trans  &trans        &trans
-&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                       &kp J           &kp L            &kp U    &kp Y   &dubbelpoint  &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                       &kp SEMICOLON   &kp N            &kp E    &kp I   &kp O         &kp DELETE
-&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 7       &kp K           &kp H            &commaq  &dotex  &aposquote    &trans
-                       &tog 8  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt 6 ENTER  &kp LEFT_SHIFT  &lt 4 LS(ENTER)  &trans   &to 1
+&trans         &trans  &trans  &trans  &trans    &trans                                      &trans          &trans           &trans      &trans     &trans          &trans
+&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                       &kp J           &kp L            &kp U       &kp Y      &kp SLASH       &kp TAB
+&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                       &kp SEMICOLON   &kp N            &kp E       &kp I      &kp O           &kp DELETE
+&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 7       &kp K           &kp H            &kp PERIOD  &kp COMMA  &kp UNDERSCORE  &trans
+                       &tog 8  &none   &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt 6 ENTER  &kp LEFT_SHIFT  &lt 4 LS(ENTER)  &trans      &to 1
             >;
 
             sensor-bindings =
@@ -123,11 +105,11 @@
         Asymbols {
             display-name = "Asymbols";
             bindings = <
-        &trans  &trans           &trans            &trans          &trans                &trans                        &trans         &trans     &trans                &trans                 &trans       &trans
-        &trans  &kp W            &kp COMMA         &kp U           &kp SEMICOLON         &kp RIGHT_BRACKET             &kp LEFT_BRACKET &kp APOSTROPHE &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
-        &trans  &kp E            &kp EQUAL         &kp MINUS       &kp KP_PLUS           &kp HASH                      &kp AMPERSAND  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &trans
-        &trans  &kp E            &kp E             &kp ASTERISK    &kp NON_US_BACKSLASH  &kp C       &trans    &trans  &kp TILDE      &kp A      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
-                                &trans            &trans          &trans                &trans      &trans    &trans  &trans         &trans     &trans                &trans
+&trans  &trans  &trans     &trans        &trans                &trans                               &trans            &trans          &trans                &trans                 &trans       &trans
+&trans  &kp W   &kp COMMA  &kp U         &kp SEMICOLON         &kp RIGHT_BRACKET                    &kp LEFT_BRACKET  &kp APOSTROPHE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
+&trans  &kp E   &kp EQUAL  &kp MINUS     &kp KP_PLUS           &kp HASH                             &kp AMPERSAND     &kp COLON       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &trans
+&trans  &kp E   &kp E      &kp ASTERISK  &kp NON_US_BACKSLASH  &kp C              &trans    &trans  &kp TILDE         &kp A           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
+                &trans     &trans        &trans                &trans             &trans    &trans  &trans            &trans          &trans                &trans
             >;
 
             sensor-bindings =
@@ -138,10 +120,10 @@
         Qsymbols {
             display-name = "symbols";
             bindings = <
-&trans  &trans           &trans            &trans          &trans                &trans                        &trans         &trans     &trans                &trans                 &trans       &trans
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp UNDERSCORE  &kp SLASH             &kp DOLLAR                    &kp PIPE       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
-&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS       &kp EQUAL             &kp HASH                      &kp AMPERSAND  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT  &trans
-&trans  &kp E            &kp E             &kp ASTERISK    &kp NON_US_BACKSLASH  &kp C       &trans    &trans  &kp TILDE      &kp A      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
+&trans  &trans           &trans            &trans          &trans                &trans                        &trans         &trans     &trans                &trans                 &trans         &trans
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp UNDERSCORE  &kp SLASH             &kp DOLLAR                    &kp PIPE       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN    &trans
+&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS       &kp EQUAL             &kp HASH                      &kp AMPERSAND  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT    &trans
+&trans  &kp E            &kp E             &kp ASTERISK    &kp NON_US_BACKSLASH  &kp C       &trans    &trans  &kp TILDE      &kp A      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &trans
                          &trans            &trans          &trans                &trans      &trans    &trans  &trans         &trans     &trans                &trans
             >;
 
@@ -153,11 +135,11 @@
         navigation {
             display-name = "nav";
             bindings = <
-&trans  &trans   &trans          &trans          &trans           &trans                    &trans  &trans          &trans     &trans    &trans    &trans
-&trans  &trans   &kp HOME        &kp UP_ARROW    &kp END          &trans                    &trans  &trans          &trans     &trans    &trans    &trans
-&trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &trans   &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans     &trans    &trans    &trans
-                 &trans          &trans          &trans           &trans  &trans    &trans  &trans  &trans          &trans     &trans
+&trans  &trans   &trans          &trans          &trans           &trans                       &trans  &trans          &trans     &trans    &trans    &trans
+&trans  &trans   &kp HOME        &kp UP_ARROW    &kp END          &kp PG_DN                    &trans  &trans          &trans     &trans    &trans    &trans
+&trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &trans   &trans          &trans          &trans           &trans     &trans    &trans  &trans  &trans          &trans     &trans    &trans    &trans
+                 &trans          &trans          &trans           &trans     &trans    &trans  &trans  &trans          &trans     &trans
             >;
 
             sensor-bindings =
@@ -198,11 +180,11 @@
         gaming_azerty {
             display-name = "Agame";
             bindings = <
-&trans  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL       &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &to 9         &trans        &kp LCTRL     &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL       &kp W         &kp X         &kp C         &kp V         &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans        &to 9         &trans        &kp LCTRL     &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -216,7 +198,7 @@
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp A         &kp Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Q         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Z         &kp X         &kp C         &kp V         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &to 1         &to 8         &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 8
             >;
 
