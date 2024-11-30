@@ -36,7 +36,7 @@
         adot: adot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN>, <&kp N7>;
+            bindings = <&kp LESS_THAN>, <&kp LS(M)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -44,15 +44,23 @@
         acomma: acomma {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp M>, <&kp DOT>;
+            bindings = <&kp M>, <&kp N7>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        aquestion: aquestion {
+        acolon: acolon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LS(M)>, <&kp N2>;
+            bindings = <&kp DOT>, <&kp COMMA>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aquote: aquote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp N2>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -60,7 +68,7 @@
         dot: dot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&qwertyegrave>;
+            bindings = <&kp DOT>, <&kp QUESTION>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -68,15 +76,23 @@
         comma: comma {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp COLON>;
+            bindings = <&kp COMMA>, <&qwertyegrave>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        question: question {
+        colon: colon {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp QUESTION>, <&kp RA(E)>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        quote: quote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp RA(E)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -85,8 +101,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_1)>, <&kp NUMBER_1>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -94,8 +110,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_2)>, <&kp NUMBER_2>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -103,8 +119,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_3)>, <&kp NUMBER_3>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -112,8 +128,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_4)>, <&kp NUMBER_4>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -121,8 +137,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_5)>, <&kp NUMBER_5>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -130,8 +146,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_6)>, <&kp NUMBER_6>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -139,8 +155,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_7)>, <&kp NUMBER_7>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -148,8 +164,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_8)>, <&kp NUMBER_8>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -157,8 +173,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_9)>, <&kp NUMBER_9>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
 
@@ -166,8 +182,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LS(NUMBER_0)>, <&kp NUMBER_0>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
     };
@@ -191,6 +207,34 @@
             bindings = <&kp GRAVE &kp E>;
             label = "QWERTYEGRAVE";
         };
+
+        directory_back: directory_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp FSLH>;
+            label = "DIRECTORY_BACK";
+        };
+
+        adirectory_back: adirectory_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp LT &kp LS(DOT)>;
+            label = "ADIRECTORY_BACK";
+        };
+
+        qwertyc: qwertyc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(COMMA) &kp C>;
+            label = "QWERTYC";
+        };
+
+        qwertya: qwertya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+            label = "QWERTYA";
+        };
     };
 
     keymap {
@@ -199,10 +243,10 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&trans         &trans  &trans  &trans  &trans    &trans                                      &trans          &trans           &trans  &trans   &trans      &trans
-&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                       &kp J           &kp L            &kp U   &kp Y    &kp SLASH   &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                       &kp SEMICOLON   &kp N            &kp E   &kp I    &kp O       &kp DELETE
-&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 8       &kp K           &kp H            &adot   &acomma  &aquestion  &trans
+&trans         &trans  &trans  &trans  &trans    &trans                                       &trans          &trans           &trans  &trans   &trans      &trans
+&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                        &kp J           &kp L            &kp U   &kp Y    &aquote   &kp TAB
+&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                        &kp SEMICOLON   &kp N            &kp E   &kp I    &kp O       &kp DELETE
+&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 8        &kp K           &kp H            &adot   &acomma  &acolon  &trans
                        &tog 9  &trans  &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt2 6 ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans  &to 1
             >;
 
@@ -214,10 +258,10 @@
         qwerty_colemak {
             display-name = "Q=>col";
             bindings = <
-&trans  &trans  &trans   &trans  &trans  &trans                         &trans  &trans           &trans  &trans  &trans     &trans
-&trans  &kp Q   &kp W    &kp F   &kp P   &kp B                          &kp J   &kp L            &kp U   &kp Y   &trans     &trans
-&trans  &kp A   &kp R    &kp S   &kp T   &kp G                          &kp M   &kp N            &kp E   &kp I   &kp O      &trans
-&trans  &kp Z   &kp X    &kp C   &kp D   &kp V   &trans    &trans       &kp K   &kp H            &dot    &comma  &question  &trans
+&trans  &trans  &trans   &trans  &trans  &trans                          &trans  &trans           &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W    &kp F   &kp P   &kp B                           &kp J   &kp L            &kp U   &kp Y   &quote  &trans
+&trans  &kp A   &kp R    &kp S   &kp T   &kp G                           &kp M   &kp N            &kp E   &kp I   &kp O   &trans
+&trans  &kp Z   &kp X    &kp C   &kp D   &kp V   &trans    &trans        &kp K   &kp H            &dot    &comma  &colon  &trans
                 &tog 10  &trans  &trans  &trans  &trans    &lt2 7 ENTER  &trans  &lt 4 LS(ENTER)  &trans  &to 2
             >;
 
@@ -244,11 +288,11 @@
         Asymbols {
             display-name = "symbols";
             bindings = <
-&trans  &trans                &trans               &trans               &trans                    &trans                                &trans             &trans         &trans                &trans                 &trans             &trans
-&trans  &kp NON_US_BACKSLASH  &kp LS(NON_US_BSLH)  &kp LS(RIGHT_BRACE)  &kp LEFT_BRACKET          &kp RA(N3)                            &kp RA(NUMBER_1)   &kp LS(EQUAL)  &kp RA(NUMBER_9)      &kp RA(NUMBER_0)       &kp RA(NUMBER_2)   &trans
-&trans  &kp NUMBER_8          &kp LS(SLASH)        &kp EQUAL            &kp SLASH                 &kp LS(APOSTROPHE)                    &kp NUMBER_1       &kp NUMBER_3   &kp N5                &kp MINUS              &kp RIGHT_BRACKET  &trans
-&trans  &kp RA(SLASH)         &kp N0               &kp LS(DOT)          &kp RA(NON_US_BACKSLASH)  &kp NUMBER_9        &trans    &trans  &kp RA(BACKSLASH)  &kp NUMBER_4   &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp COMMA          &trans
-                              &trans               &trans               &trans                    &trans              &trans    &trans  &trans             &trans         &trans                &trans
+&trans  &trans                &trans               &trans               &trans                    &trans                                &trans            &trans             &trans                &trans                 &trans             &trans
+&trans  &kp NON_US_BACKSLASH  &kp LS(NON_US_BSLH)  &kp LS(RIGHT_BRACE)  &kp LEFT_BRACKET          &kp RA(N3)                            &kp RA(NUMBER_1)  &kp LS(EQUAL)      &kp RA(NUMBER_9)      &kp RA(NUMBER_0)       &kp RA(NUMBER_2)   &trans
+&trans  &kp NUMBER_8          &kp LS(SLASH)        &kp EQUAL            &kp SLASH                 &kp LS(APOSTROPHE)                    &kp NUMBER_1      &kp NUMBER_3       &kp N5                &kp MINUS              &kp RIGHT_BRACKET  &trans
+&trans  &adirectory_back      &kp N0               &kp LS(DOT)          &kp RA(NON_US_BACKSLASH)  &kp NUMBER_9        &trans    &trans  &kp RA(SLASH)     &kp RA(BACKSLASH)  &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &trans             &trans
+                              &trans               &trans               &trans                    &trans              &trans    &trans  &trans            &trans             &trans                &trans
             >;
 
             sensor-bindings =
@@ -259,10 +303,10 @@
         Qsymbols {
             display-name = "symbols";
             bindings = <
-&trans  &trans           &trans            &trans        &trans                &trans                         &trans     &trans             &trans                &trans                 &trans         &trans
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp ASTERISK  &kp CARET             &kp HASH                       &kp PIPE   &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN    &trans
-&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS     &kp EQUAL             &kp PERCENT                    &kp AMPS   &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR     &trans
-&trans  &kp TILDE        &kp A             &kp SLASH     &kp NON_US_BACKSLASH  &kp C        &trans    &trans  &kp GRAVE  &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &trans
+&trans  &trans           &trans            &trans        &trans                &trans                         &trans     &trans             &trans                &trans                 &trans       &trans
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp ASTERISK  &kp CARET             &kp HASH                       &kp PIPE   &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
+&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS     &kp EQUAL             &kp PERCENT                    &kp AMPS   &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR   &trans
+&trans  &directory_back  &qwertya          &kp SLASH     &kp NON_US_BACKSLASH  &qwertyc     &trans    &trans  &kp TILDE  &kp GRAVE          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans       &trans
                          &trans            &trans        &trans                &trans       &trans    &trans  &trans     &trans             &trans                &trans
             >;
 
