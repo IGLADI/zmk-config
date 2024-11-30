@@ -25,10 +25,18 @@
             bindings = <&kp>;
         };
 
+        lt2: layer_tap_2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
+
         adot: adot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LESS_THAN>, <&kp DOT>;
+            bindings = <&kp LESS_THAN>, <&kp N7>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -36,7 +44,7 @@
         acomma: acomma {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp M>, <&kp N2>;
+            bindings = <&kp M>, <&kp DOT>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -44,7 +52,7 @@
         aquestion: aquestion {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LS(M)>, <&kp N7>;
+            bindings = <&kp LS(M)>, <&kp N2>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -52,7 +60,7 @@
         dot: dot {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&kp DOT>, <&qwertyegrave>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -60,7 +68,7 @@
         comma: comma {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp RA(E)>;
+            bindings = <&kp COMMA>, <&kp COLON>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -68,9 +76,99 @@
         question: question {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp QUESTION>, <&qwertyegrave>;
+            bindings = <&kp QUESTION>, <&kp RA(E)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        one: one {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_1)>, <&kp NUMBER_1>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        two: two {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_2)>, <&kp NUMBER_2>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        three: three {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_3)>, <&kp NUMBER_3>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        four: four {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_4)>, <&kp NUMBER_4>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        five: five {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_5)>, <&kp NUMBER_5>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        six: six {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_6)>, <&kp NUMBER_6>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        seven: seven {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_7)>, <&kp NUMBER_7>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        eight: eight {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_8)>, <&kp NUMBER_8>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        nine: nine {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_9)>, <&kp NUMBER_9>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+
+        zero: zero {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_0)>, <&kp NUMBER_0>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
     };
 
@@ -104,8 +202,8 @@
 &trans         &trans  &trans  &trans  &trans    &trans                                      &trans          &trans           &trans  &trans   &trans      &trans
 &kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                       &kp J           &kp L            &kp U   &kp Y    &kp SLASH   &kp TAB
 &kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                       &kp SEMICOLON   &kp N            &kp E   &kp I    &kp O       &kp DELETE
-&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 7       &kp K           &kp H            &adot   &acomma  &aquestion  &trans
-                       &tog 8  &trans  &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt 6 ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans  &to 1
+&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 8       &kp K           &kp H            &adot   &acomma  &aquestion  &trans
+                       &tog 9  &trans  &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt2 6 ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans  &to 1
             >;
 
             sensor-bindings =
@@ -116,11 +214,11 @@
         qwerty_colemak {
             display-name = "Q=>col";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans           &trans  &trans  &trans     &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                     &kp J   &kp L            &kp U   &kp Y   &trans     &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G                     &kp M   &kp N            &kp E   &kp I   &kp O      &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans  &kp K   &kp H            &dot    &comma  &question  &trans
-                &tog 9  &trans  &trans  &trans  &trans    &trans  &trans  &lt 4 LS(ENTER)  &trans  &to 2
+&trans  &trans  &trans   &trans  &trans  &trans                         &trans  &trans           &trans  &trans  &trans     &trans
+&trans  &kp Q   &kp W    &kp F   &kp P   &kp B                          &kp J   &kp L            &kp U   &kp Y   &trans     &trans
+&trans  &kp A   &kp R    &kp S   &kp T   &kp G                          &kp M   &kp N            &kp E   &kp I   &kp O      &trans
+&trans  &kp Z   &kp X    &kp C   &kp D   &kp V   &trans    &trans       &kp K   &kp H            &dot    &comma  &question  &trans
+                &tog 10  &trans  &trans  &trans  &trans    &lt2 7 ENTER  &trans  &lt 4 LS(ENTER)  &trans  &to 2
             >;
 
             sensor-bindings =
@@ -144,7 +242,7 @@
         };
 
         Asymbols {
-            display-name = "Asymbols";
+            display-name = "symbols";
             bindings = <
 &trans  &trans                &trans               &trans               &trans                    &trans                                &trans             &trans         &trans                &trans                 &trans             &trans
 &trans  &kp NON_US_BACKSLASH  &kp LS(NON_US_BSLH)  &kp LS(RIGHT_BRACE)  &kp LEFT_BRACKET          &kp RA(N3)                            &kp RA(NUMBER_1)   &kp LS(EQUAL)  &kp RA(NUMBER_9)      &kp RA(NUMBER_0)       &kp RA(NUMBER_2)   &trans
@@ -191,6 +289,21 @@
         number_fn {
             display-name = "numbers";
             bindings = <
+&trans   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans   &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &one    &two    &three  &four   &five                     &six    &seven  &eight  &nine   &zero    &trans
+&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_DN PG_UP>;
+        };
+
+        qnumbers_fn {
+            display-name = "numbers";
+            bindings = <
 &trans   &trans        &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans   &trans
 &kp F12  &kp F1        &kp F2  &kp F3  &kp F4  &kp F5                    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
 &trans   &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans
@@ -225,7 +338,7 @@
 &trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LCTRL       &kp W         &kp X         &kp C         &kp V         &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &to 9         &trans        &kp LCTRL     &kp SPACE    &trans  &trans  &trans  &trans  &trans
+                        &trans        &to 10        &trans        &kp LCTRL     &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -240,7 +353,7 @@
 &trans  &trans  &kp A         &kp Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Q         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Z         &kp X         &kp C         &kp V         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &to 1         &to 8         &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 8
+                &to 1         &to 9         &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 9
             >;
 
             sensor-bindings =
