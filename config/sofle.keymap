@@ -243,11 +243,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&trans         &trans  &trans  &trans  &trans    &trans                                       &trans          &trans           &trans  &trans   &trans      &trans
-&kp ESCAPE     &kp A   &kp Z   &kp F   &kp P     &kp B                                        &kp J           &kp L            &kp U   &kp Y    &aquote   &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S   &kp T     &kp G                                        &kp SEMICOLON   &kp N            &kp E   &kp I    &kp O       &kp DELETE
-&trans         &kp W   &kp X   &kp C   &kp D     &kp V            &kp C_MUTE    &tog 8        &kp K           &kp H            &adot   &acomma  &acolon  &trans
-                       &tog 9  &trans  &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt2 6 ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans  &to 1
+&trans         &trans  &trans  &trans          &trans    &trans                                       &trans          &trans           &trans  &trans   &trans   &trans
+&kp ESCAPE     &kp A   &kp Z   &kp F           &kp P     &kp B                                        &kp J           &kp L            &kp U   &kp Y    &aquote  &kp TAB
+&kp BACKSPACE  &kp Q   &kp R   &kp S           &kp T     &kp G                                        &kp SEMICOLON   &kp N            &kp E   &kp I    &kp O    &kp DELETE
+&trans         &kp W   &kp X   &kp C           &kp D     &kp V            &kp C_MUTE    &tog 8        &kp K           &kp H            &adot   &acomma  &acolon  &trans
+                       &tog 9  &kp LEFT_SHIFT  &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt2 6 ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans  &to 1
             >;
 
             sensor-bindings =
@@ -258,11 +258,11 @@
         qwerty_colemak {
             display-name = "Q=>col";
             bindings = <
-&trans  &trans  &trans   &trans  &trans  &trans                          &trans  &trans           &trans  &trans  &trans  &trans
-&trans  &kp Q   &kp W    &kp F   &kp P   &kp B                           &kp J   &kp L            &kp U   &kp Y   &quote  &trans
-&trans  &kp A   &kp R    &kp S   &kp T   &kp G                           &kp M   &kp N            &kp E   &kp I   &kp O   &trans
-&trans  &kp Z   &kp X    &kp C   &kp D   &kp V   &trans    &trans        &kp K   &kp H            &dot    &comma  &colon  &trans
-                &tog 10  &trans  &trans  &trans  &trans    &lt2 7 ENTER  &trans  &lt 4 LS(ENTER)  &trans  &to 2
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans           &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                           &kp J   &kp L            &kp U   &kp Y   &quote  &trans
+&trans  &kp A   &kp R   &kp S   &kp T   &kp G                           &kp M   &kp N            &kp E   &kp I   &kp O   &trans
+&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans        &kp K   &kp H            &dot    &comma  &colon  &trans
+                &tog 9  &trans  &trans  &trans  &trans    &lt2 7 ENTER  &trans  &lt 4 LS(ENTER)  &trans  &to 2
             >;
 
             sensor-bindings =
@@ -375,13 +375,13 @@
                 <&inc_dec_kp PG_DN PG_UP>;
         };
 
-        gaming_azerty {
-            display-name = "Agame";
+        gaming {
+            display-name = "game";
             bindings = <
 &trans  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL       &kp W         &kp X         &kp C         &kp V         &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                              &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P
+&trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                              &kp G   &kp H   &kp J   &kp K   &kp L   &trans
+&trans  &kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &trans       &trans  &kp B   &kp N   &kp M   &trans  &trans  &trans
                         &trans        &to 10        &trans        &kp LCTRL     &kp SPACE    &trans  &trans  &trans  &trans  &trans
             >;
 
@@ -393,11 +393,11 @@
         gaming_qwerty {
             display-name = "Qgame";
             bindings = <
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp A         &kp Z         &kp E         &kp R                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp Q         &kp S         &kp D         &kp F                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp Z         &kp X         &kp C         &kp V         &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &to 1         &to 9         &trans        &trans        &trans    &trans  &trans  &trans  &trans  &to 9
+&trans  &kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &kp TAB         &kp A         &kp Z         &kp E         &kp R                              &kp T   &kp Y   &kp U      &kp I   &kp O   &kp P
+&trans  &kp LEFT_SHIFT  &kp Q         &kp S         &kp D         &kp F                              &kp G   &kp H   &kp J      &kp K   &kp L   &trans
+&trans  &kp LCTRL       &kp W         &kp X         &kp C         &kp V         &trans       &trans  &kp B   &kp N   &kp COMMA  &trans  &trans  &trans
+                        &to 1         &to 9         &trans        &kp LCTRL     &kp SPACE    &trans  &trans  &trans  &trans     &to 9
             >;
 
             sensor-bindings =
