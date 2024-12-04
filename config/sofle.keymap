@@ -14,7 +14,7 @@
 #define RAISE 2
 #define GAMING 3
 
-&mt { tapping-term-ms = <500>; };
+&mt { tapping-term-ms = <200>; };
 
 / {
     // add 2ns nkp (non-overlap key press)
