@@ -244,11 +244,11 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&trans         &trans  &trans  &trans          &trans    &trans                                       &trans          &trans           &trans  &trans   &trans   &trans
-&kp ESCAPE     &kp A   &kp Z   &kp F           &kp P     &kp B                                        &kp J           &kp L            &kp U   &kp Y    &aquote  &kp TAB
-&kp BACKSPACE  &kp Q   &kp R   &kp S           &kp T     &kp G                                        &kp SEMICOLON   &kp N            &kp E   &kp I    &kp O    &kp DELETE
-&trans         &kp W   &kp X   &kp C           &kp D     &kp V            &kp C_MUTE    &tog 8        &kp K           &kp H            &adot   &acomma  &acolon  &trans
-                       &tog 9  &kp LEFT_SHIFT  &kp LALT  &mt LCTRL SPACE  &kp LGUI      &lt2 6 ENTER  &kp LEFT_SHIFT  &lt 3 LS(ENTER)  &trans  &to 1
+&trans         &trans  &trans  &trans          &trans           &trans                                       &trans                    &trans     &trans     &trans   &trans   &trans
+&trans         &kp A   &kp Z   &kp F           &kp P            &kp B                                        &kp J                     &kp L      &kp U      &kp Y    &aquote  &trans
+&kp BACKSPACE  &kp Q   &kp R   &kp S           &kp T            &kp G                                        &kp SEMICOLON             &kp N      &kp E      &kp I    &kp O    &kp DELETE
+&trans         &kp W   &kp X   &kp C           &kp D            &kp V            &kp C_MUTE    &tog 8        &kp K                     &kp H      &adot      &acomma  &acolon  &trans
+                       &tog 9  &kp LEFT_SHIFT  &mt LALT ESCAPE  &mt LCTRL SPACE  &kp LGUI      &lt2 6 ENTER  &mt LEFT_SHIFT LS(ENTER)  &lt 3 TAB  &kp LCTRL  &to 1
             >;
 
             sensor-bindings =
@@ -259,11 +259,11 @@
         qwerty_colemak {
             display-name = "Q=>col";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans           &trans  &trans  &trans  &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                           &kp J   &kp L            &kp U   &kp Y   &quote  &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G                           &kp M   &kp N            &kp E   &kp I   &kp O   &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans        &kp K   &kp H            &dot    &comma  &colon  &trans
-                &tog 9  &trans  &trans  &trans  &trans    &lt2 7 ENTER  &trans  &lt 4 LS(ENTER)  &trans  &to 2
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W   &kp F   &kp P   &kp B                           &kp J   &kp L      &kp U   &kp Y   &quote  &trans
+&trans  &kp A   &kp R   &kp S   &kp T   &kp G                           &kp M   &kp N      &kp E   &kp I   &kp O   &trans
+&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans        &kp K   &kp H      &dot    &comma  &colon  &trans
+                &tog 9  &trans  &trans  &trans  &trans    &lt2 7 ENTER  &trans  &lt 4 TAB  &trans  &to 2
             >;
 
             sensor-bindings =
