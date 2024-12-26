@@ -248,7 +248,7 @@
 &kp LEFT_SHIFT  &kp A   &kp Z   &kp F           &kp P            &kp B                                        &kp J                     &kp L      &kp U      &kp Y    &aquote  &kp LEFT_ALT
 &kp BACKSPACE   &kp Q   &kp R   &kp S           &kp T            &kp G                                        &kp SEMICOLON             &kp N      &kp E      &kp I    &kp O    &kp DELETE
 &kp LCTRL       &kp W   &kp X   &kp C           &kp D            &kp V            &kp C_MUTE    &trans        &kp K                     &kp H      &adot      &acomma  &acolon  &kp LCTRL
-                        &tog 7  &kp LEFT_SHIFT  &mt LALT ESCAPE  &mt LCTRL SPACE  &kp LGUI      &lt2 5 ENTER  &mt LEFT_SHIFT LS(ENTER)  &lt 2 TAB  &kp LCTRL  &to 1
+                        &tog 5  &kp LEFT_SHIFT  &mt LALT ESCAPE  &mt LCTRL SPACE  &kp LGUI      &lt2 7 ENTER  &mt LEFT_SHIFT LS(ENTER)  &lt 2 TAB  &kp LCTRL  &to 1
             >;
 
             sensor-bindings =
@@ -263,7 +263,7 @@
 &trans  &kp Q   &kp W   &kp F   &kp P   &kp B                           &kp J   &kp L      &kp U   &kp Y   &quote  &trans
 &trans  &kp A   &kp R   &kp S   &kp T   &kp G                           &kp M   &kp N      &kp E   &kp I   &kp O   &trans
 &trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans        &kp K   &kp H      &dot    &comma  &colon  &trans
-                &tog 7  &trans  &trans  &trans  &trans    &lt2 6 ENTER  &trans  &lt 3 TAB  &trans  &to 0
+                &tog 5  &trans  &trans  &trans  &trans    &lt2 8 ENTER  &trans  &lt 3 TAB  &trans  &to 0
             >;
 
             sensor-bindings =
@@ -316,6 +316,38 @@
                 <&inc_dec_kp PG_DN PG_UP>;
         };
 
+        gaming {
+            display-name = "game";
+            bindings = <
+&kp ESCAPE  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                          &kp N6  &kp N7  &kp N8  &kp N9  &trans  &trans
+&kp T       &kp TAB         &kp Q         &kp W         &kp E         &kp R                           &trans  &kp Y   &kp U   &kp I   &kp O   &kp P
+&kp G       &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                           &trans  &kp H   &kp J   &kp K   &kp L   &trans
+&kp B       &kp LCTRL       &kp Z         &kp X         &kp C         &kp V      &trans       &trans  &trans  &kp N   &kp M   &trans  &trans  &trans
+                            &trans        &to 6         &mo 8         &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans  &to 6
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_DN PG_UP>;
+        };
+
+        gaming_qwerty {
+            display-name = "Qgame";
+            bindings = <
+&kp ESC  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                          &kp N6  &kp N7  &kp N8     &kp N9  &trans  &trans
+&kp T    &kp TAB         &kp A         &kp Z         &kp E         &kp R                           &trans  &kp Y   &kp U      &kp I   &kp O   &kp P
+&kp G    &kp LEFT_SHIFT  &kp Q         &kp S         &kp D         &kp F                           &trans  &kp H   &kp J      &kp K   &kp L   &trans
+&kp B    &kp LCTRL       &kp W         &kp X         &kp C         &kp V      &trans       &trans  &trans  &kp N   &kp COMMA  &trans  &trans  &trans
+                         &to 0         &to 5         &mo 8         &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans     &to 5
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_DN PG_UP>;
+
+            label = "gaming";
+        };
+
         Anumber_fn {
             display-name = "numbers";
             bindings = <
@@ -344,38 +376,6 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp PG_DN PG_UP>;
-        };
-
-        gaming {
-            display-name = "game";
-            bindings = <
-&trans  &kp ESCAPE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp TAB         &kp Q         &kp W         &kp E         &kp R                              &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P
-&trans  &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F                              &kp G   &kp H   &kp J   &kp K   &kp L   &trans
-&trans  &kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &trans       &trans  &kp B   &kp N   &kp M   &trans  &trans  &trans
-                        &trans        &to 8         &mo 5         &kp LCTRL     &kp SPACE    &trans  &trans  &trans  &trans  &to 8
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
-        };
-
-        gaming_qwerty {
-            display-name = "Qgame";
-            bindings = <
-&trans  &kp ESC         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                       &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &kp TAB         &kp A         &kp Z         &kp E         &kp R                              &kp T   &kp Y   &kp U      &kp I   &kp O   &kp P
-&trans  &kp LEFT_SHIFT  &kp Q         &kp S         &kp D         &kp F                              &kp G   &kp H   &kp J      &kp K   &kp L   &trans
-&trans  &kp LCTRL       &kp W         &kp X         &kp C         &kp V         &trans       &trans  &kp B   &kp N   &kp COMMA  &trans  &trans  &trans
-                        &to 0         &to 7         &mo 5         &kp LCTRL     &kp SPACE    &trans  &trans  &trans  &trans     &to 7
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_DN PG_UP>;
-
-            label = "gaming";
         };
     };
 };
