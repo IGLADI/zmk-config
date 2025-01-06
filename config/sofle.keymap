@@ -304,11 +304,11 @@
         navigation {
             display-name = "nav";
             bindings = <
-&trans  &trans   &trans          &trans          &trans           &trans                       &trans  &trans          &trans     &trans    &trans    &trans
-&trans  &trans   &kp HOME        &kp UP_ARROW    &kp END          &kp PG_DN                    &trans  &trans          &trans     &trans    &trans    &trans
-&trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &trans   &trans          &trans          &trans           &trans     &trans    &trans  &trans  &trans          &trans     &trans    &trans    &trans
-                 &trans          &trans          &trans           &trans     &trans    &trans  &trans  &trans          &trans     &trans
+&trans  &trans   &trans          &trans          &trans           &trans                           &trans  &trans          &trans     &trans    &trans    &trans
+&trans  &trans   &kp HOME        &kp UP_ARROW    &kp END          &kp LC(PG_DN)                    &trans  &trans          &trans     &trans    &trans    &trans
+&trans  &kp TAB  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LC(PG_UP)                    &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &trans   &trans          &trans          &trans           &trans         &trans    &trans  &trans  &trans          &trans     &trans    &trans    &trans
+                 &trans          &trans          &trans           &trans         &trans    &trans  &trans  &trans          &trans     &trans
             >;
 
             sensor-bindings =
