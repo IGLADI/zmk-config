@@ -272,7 +272,7 @@
         azerty_colemak {
             display-name = "A=>col";
             bindings = <
-&kp ESCAPE      &kp NUMBER_1  &kp N2  &kp N3          &kp N4           &kp N5                                        &kp N6                &kp N7     &kp N8     &kp N9   &kp N0   &trans
+&kp ESCAPE      &kp NUMBER_1  &kp N2  &kp N3          &kp N4           &kp N5                                        &kp N6                &kp N7     &kp N8     &kp N9   &kp N0   &kp ESCAPE
 &kp LEFT_SHIFT  &kp A         &kp Z   &kp F           &kp P            &kp B                                         &kp J                 &kp L      &kp U      &kp Y    &aquote  &kp LEFT_ALT
 &kp BACKSPACE   &kp Q         &kp R   &kp S           &kp T            &kp G                                         &kp SEMICOLON         &kp N      &kp E      &kp I    &kp O    &kp DELETE
 &kp LCTRL       &kp W         &kp X   &kp C           &kp D            &kp V            &kp C_MUTE    &kp LG(LS(Q))  &kp K                 &kp H      &adot      &acomma  &acolon  &kp LCTRL
@@ -291,7 +291,7 @@
 &trans  &kp Q   &kp W   &kp F           &kp P            &kp B                                       &kp J                 &kp L      &kp U      &kp Y   &quote  &trans
 &trans  &kp A   &kp R   &kp S           &kp T            &kp G                                       &kp M                 &kp N      &kp E      &kp I   &kp O   &trans
 &trans  &kp Z   &kp X   &kp C           &kp D            &kp V            &trans      &trans         &kp K                 &kp H      &dot       &comma  &colon  &trans
-                &tog 5  &kp LEFT_SHIFT  &mt LALT ESCAPE  &mt LCTRL ENTER  &kp LGUI    &lt 8 LS(TAB)  &mt LEFT_SHIFT SPACE  &lt 3 TAB  &kp LCTRL  &to 1
+                &tog 5  &kp LEFT_SHIFT  &mt LALT ESCAPE  &mt LCTRL ENTER  &kp LGUI    &lt 8 LS(TAB)  &mt LEFT_SHIFT SPACE  &lt 3 TAB  &kp LCTRL  &to 0
             >;
 
             sensor-bindings =
