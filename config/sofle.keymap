@@ -302,11 +302,11 @@
         Asymbols {
             display-name = "symbols";
             bindings = <
-&trans  &trans                &trans               &trans               &trans                    &trans                                &trans             &trans         &trans                &trans                 &trans            &trans
-&trans  &kp NON_US_BACKSLASH  &kp LS(NON_US_BSLH)  &kp LS(RIGHT_BRACE)  &kp LEFT_BRACKET          &kp RA(N3)                            &kp RA(NUMBER_1)   &kp LS(EQUAL)  &kp RA(NUMBER_9)      &kp RA(NUMBER_0)       &kp RA(NUMBER_2)  &trans
-&trans  &kp NUMBER_8          &kp LS(SLASH)        &kp EQUAL            &kp SLASH                 &kp LS(APOSTROPHE)                    &kp NUMBER_1       &kp NUMBER_3   &kp N5                &kp MINUS              &atilde           &trans
-&trans  &adirectory_back      &kp N0               &kp LS(DOT)          &kp RA(NON_US_BACKSLASH)  &kp NUMBER_9        &trans    &trans  &kp RIGHT_BRACKET  &agrave        &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp COMMA         &trans
-                              &trans               &trans               &trans                    &trans              &trans    &trans  &trans             &trans         &trans                &trans
+&trans  &trans                &trans               &trans               &trans                    &trans                              &trans             &trans         &trans                &trans                 &trans            &trans
+&trans  &kp NON_US_BACKSLASH  &kp LS(NON_US_BSLH)  &kp LS(RIGHT_BRACE)  &kp LEFT_BRACKET          &kp RA(NUMBER_1)                    &kp RA(N3)         &kp LS(EQUAL)  &kp RA(NUMBER_9)      &kp RA(NUMBER_0)       &kp RA(NUMBER_2)  &trans
+&trans  &kp NUMBER_8          &kp LS(SLASH)        &kp EQUAL            &kp SLASH                 &kp NUMBER_1                        &kp RIGHT_BRACKET  &kp NUMBER_3   &kp N5                &kp MINUS              &atilde           &trans
+&trans  &adirectory_back      &kp LS(APOSTROPHE)   &kp LS(DOT)          &kp RA(NON_US_BACKSLASH)  &kp NUMBER_9      &trans    &trans  &kp N0             &agrave        &kp RA(LEFT_BRACKET)  &kp RA(RIGHT_BRACKET)  &kp COMMA         &trans
+                              &trans               &trans               &trans                    &trans            &trans    &trans  &trans             &trans         &trans                &trans
             >;
 
             sensor-bindings =
@@ -317,11 +317,11 @@
         Qsymbols {
             display-name = "symbols";
             bindings = <
-&trans  &trans           &trans            &trans        &trans                &trans                         &trans      &trans             &trans                &trans                 &trans       &trans
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp ASTERISK  &kp CARET             &kp HASH                       &kp PIPE    &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
-&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS     &kp EQUAL             &kp PERCENT                    &kp AMPS    &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &qtilde      &trans
-&trans  &directory_back  &qwertya          &kp SLASH     &kp NON_US_BACKSLASH  &qwertyc     &trans    &trans  &kp DOLLAR  &qgrave            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI     &trans
-                         &trans            &trans        &trans                &trans       &trans    &trans  &trans      &trans             &trans                &trans
+&trans  &trans           &trans            &trans        &trans                &trans                      &trans      &trans             &trans                &trans                 &trans       &trans
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp ASTERISK  &kp CARET             &kp PIPE                    &kp HASH    &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
+&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS     &kp EQUAL             &kp AMPS                    &kp DOLLAR  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &qtilde      &trans
+&trans  &directory_back  &kp PERCENT       &kp SLASH     &kp NON_US_BACKSLASH  &qwertyc  &trans    &trans  &qwertya    &qgrave            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI     &trans
+                         &trans            &trans        &trans                &trans    &trans    &trans  &trans      &trans             &trans                &trans
             >;
 
             sensor-bindings =

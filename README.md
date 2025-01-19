@@ -14,7 +14,6 @@ This my custom ZMK keymap designed for the Sofle Split Keyboard. [It can also be
 - 🟩 Redundant (oplional) keys
 - 🟨 Optional (gaming-only) keys
 - 🟥 Controversial/optional/movable keys
-- 🟦 Swappable keys
 
 ## Idea
 
@@ -34,7 +33,7 @@ This keymap is highly customizable. Here are some suggestions for modifications:
 -   **Remove Top Row**: If you're using a smaller keyboard, you can remove the top row, as it is only meant to be used while gaming.
 -   **Remove Direct Gaming Layer Access + Right Ctrl**: If you have a smaller thumb cluster, you can moove the gaming layer in the layout rotation.
 -   **Homerow Mod**: If you prefer using the homerow mod, you can replace mod taps on the thumb cluster with this method.
--   **Switching Key Positions**: Swap `-` and `+` or `_` and `` ` `` for easier memorization. `-` and `_` are used more frequently, hence there placement.
+-   **Switching Symbols**: Depending on what programming language you use, or for easier memorization, you can switch the symbols layer around.
 -   **Using a different layout**: You can switch to a different layout, any alternative layout will be a bing improvement over QWERTY/AZERTY so just pick one and enjoy.
 -   **Remove rotary encoders/display**: If you don't have rotary encoders or a display, you can simply remove their configurations.
 -   **Swapping Thumb Clusters**: Swap the thumb clusters of hands.
