@@ -10,6 +10,12 @@ This my custom ZMK keymap designed for the Sofle Split Keyboard. [It can also be
 ![nums](nums.png)
 ![gaming](gaming.png)
 
+### Color Legend
+- 🟩 Redundant (oplional) keys
+- 🟨 Optional (gaming-only) keys
+- 🟥 Controversial/optional/movable keys
+- 🟦 Swappable keys
+
 ## Idea
 
 The keymap is designed with the following goals in mind:
