@@ -11,9 +11,10 @@ This my custom ZMK keymap designed for the Sofle Split Keyboard. [It can also be
 ![gaming](gaming.png)
 
 ### Color Legend
-- 🟩 Redundant (oplional) keys
-- 🟨 Optional (gaming-only) keys
-- 🟥 Controversial/optional/movable keys
+
+-   🟩 Redundant (oplional) keys
+-   🟨 Optional (gaming-only) keys
+-   🟥 Controversial/optional/movable keys
 
 ## Idea
 
@@ -21,7 +22,7 @@ The keymap is designed with the following goals in mind:
 
 -   **Compatibility across PCs**: Converts QWERTY and AZERTY layouts to **Colemak-DH**.
 -   **Ergonomics and Efficiency**: Reduces (inconfortable) finger movements.
--   **No Homerow Mod**: Prevents accidental shortcut activations.
+-   **No Homerow Mod**: Prevents accidental shortcut activations. (although Shift is set on the space key: worst case you type a word in PascalCase)
 -   **Common Shortcuts**: Keeps all necessary shortcuts easily accessible and add redundancy for modifiers just in case.
 -   **Language-Specific Keys**: Maintains support for keys used in french.
 -   **Gaming Layer**: Dedicated gaming layer for keybinding compatibility with games.
