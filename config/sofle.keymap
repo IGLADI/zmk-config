@@ -317,11 +317,11 @@
         Qsymbols {
             display-name = "symbols";
             bindings = <
-&trans  &trans           &trans            &trans        &trans                &trans                      &trans      &trans             &trans                &trans                 &trans       &trans
-&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp ASTERISK  &kp CARET             &kp PIPE                    &kp HASH    &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
-&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS     &kp EQUAL             &kp AMPS                    &kp DOLLAR  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &qtilde      &trans
-&trans  &directory_back  &kp PERCENT       &kp SLASH     &kp NON_US_BACKSLASH  &qwertyc  &trans    &trans  &qwertya    &qgrave            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI     &trans
-                         &trans            &trans        &trans                &trans    &trans    &trans  &trans      &trans             &trans                &trans
+&trans  &trans           &trans            &trans        &trans         &trans                      &trans      &trans             &trans                &trans                 &trans       &trans
+&trans  &kp LESS_THAN    &kp GREATER_THAN  &kp ASTERISK  &kp CARET      &kp PIPE                    &kp HASH    &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
+&trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS     &kp EQUAL      &kp AMPS                    &kp DOLLAR  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &qtilde      &trans
+&trans  &directory_back  &kp PERCENT       &kp SLASH     &kp BACKSLASH  &qwertyc  &trans    &trans  &qwertya    &qgrave            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI     &trans
+                         &trans            &trans        &trans         &trans    &trans    &trans  &trans      &trans             &trans                &trans
             >;
 
             sensor-bindings =
@@ -347,11 +347,11 @@
         gaming {
             display-name = "game";
             bindings = <
-&trans  &trans          &trans  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp T   &kp TAB         &kp Q   &kp W   &kp E   &kp R                           &trans  &kp Y   &kp U   &kp I   &kp O   &kp P
-&kp G   &kp LEFT_SHIFT  &kp A   &kp S   &kp D   &kp F                           &trans  &kp H   &kp J   &kp K   &kp L   &trans
-&kp B   &kp LCTRL       &kp Z   &kp X   &kp C   &kp V      &trans       &trans  &trans  &kp N   &kp M   &trans  &trans  &trans
-                        &trans  &to 6   &kp LALT   &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans  &to 6
+&trans  &trans          &trans  &trans  &trans    &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp T   &kp TAB         &kp Q   &kp W   &kp E     &kp R                           &trans  &kp Y   &kp U   &kp I   &kp O   &kp P
+&kp G   &kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F                           &trans  &kp H   &kp J   &kp K   &kp L   &trans
+&kp B   &kp LCTRL       &kp Z   &kp X   &kp C     &kp V      &trans       &trans  &trans  &kp N   &kp M   &trans  &trans  &trans
+                        &trans  &to 6   &kp LALT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans  &to 6
             >;
 
             sensor-bindings =
