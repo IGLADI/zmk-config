@@ -269,6 +269,13 @@
             bindings = <&kp GRAVE &kp SPACE>;
             label = "QGRAVE";
         };
+
+        dubbel_point: dubbel_point {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_BRACKET>;
+            label = "DUBBEL_POINT";
+        };
     };
 
     keymap {
@@ -325,7 +332,7 @@
 &trans  &trans           &trans            &trans        &trans         &trans                      &trans      &trans             &trans                &trans                 &trans       &trans
 &trans  &kp LESS_THAN    &kp GREATER_THAN  &kp ASTERISK  &kp CARET      &kp PIPE                    &kp HASH    &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN  &trans
 &trans  &kp EXCLAMATION  &kp PLUS          &kp MINUS     &kp EQUAL      &kp AMPS                    &kp DOLLAR  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &qtilde      &trans
-&trans  &directory_back  &kp PERCENT       &kp SLASH     &kp BACKSLASH  &kp C     &trans    &trans  &kp A       &qgrave            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI     &trans
+&trans  &none            &kp PERCENT       &kp SLASH     &kp BACKSLASH  &kp C     &trans    &trans  &kp A       &qgrave            &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMI     &trans
                          &trans            &trans        &trans         &trans    &trans    &trans  &trans      &trans             &trans                &trans
             >;
 
