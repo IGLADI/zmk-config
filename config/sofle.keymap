@@ -203,6 +203,7 @@
         reset {
             bindings = <&tog 0>;
             key-positions = <42 43>;
+            timeout-ms = <400>;
         };
     };
 
