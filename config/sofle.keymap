@@ -273,7 +273,7 @@
         dubbel_point: dubbel_point {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_BRACKET>;
+            bindings = <&kp LEFT_SHIFT &kp LBKT>;
             label = "DUBBEL_POINT";
         };
     };
